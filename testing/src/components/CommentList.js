@@ -18,7 +18,9 @@ class CommentList extends Component {
   }
 }
 
+//NOTE: map state from redux to component props
 function mapStateToProps(state) {
+  //NOTE: access comments state since we used combimed reducer which merge all the reducer states into one
   return { comments: state.comments };
 }
 

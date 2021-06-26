@@ -12,6 +12,7 @@ beforeEach(() => {
   };
 
   wrapped = mount(
+    //NOTE: TEST: GOOGLE: check initialState with combined reducer
     <Root initialState={initialState}>
       <CommentList />
     </Root>
@@ -23,6 +24,7 @@ it('creates one LI per comment', () => {
 });
 
 it('shows the text for each comment', () => {
+  //NOTE:GOOGLE: check the render method from enzyme library
   expect(wrapped.render().text()).toContain('Comment 1');
   expect(wrapped.render().text()).toContain('Comment 2');
 });
