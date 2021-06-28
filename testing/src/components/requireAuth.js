@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+//NOTE: Higher order component example
 export default ChildComponent => {
   class ComposedComponent extends Component {
     // Our component just got rendered

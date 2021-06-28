@@ -35,4 +35,5 @@ class CommentBox extends Component {
   }
 }
 
+//NOTE: multiple HOCs
 export default connect(null, actions)(requireAuth(CommentBox));
